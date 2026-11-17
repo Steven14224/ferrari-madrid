@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferrari Madrid | Concesionario oficial Ferrari en Madrid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Manrope:wght@400;500;600;700&family=Saira+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --color-background-50: oklch(.142 .004 60);
+  --color-background-100: oklch(.178 .005 60);
+  --color-background-200: oklch(.212 .006 58);
+  --color-background-300: oklch(.283 .006 58);
+  --color-background-400: oklch(.362 .006 58);
+  --color-foreground-50: oklch(.148 .003 60);
+  --color-foreground-400: oklch(.482 .005 60);
+  --color-foreground-500: oklch(.575 .006 60);
+  --color-foreground-600: oklch(.676 .005 60);
+  --color-foreground-700: oklch(.768 .005 60);
+  --color-foreground-800: oklch(.852 .004 60);
+  --color-foreground-900: oklch(.925 .003 60);
+  --color-foreground-950: oklch(.985 .002 90);
+  --color-primary-300: oklch(.798 .118 26);
+  --color-primary-500: oklch(.545 .226 27);
+  --color-primary-600: oklch(.482 .208 27);
+  --color-primary-700: oklch(.412 .18 27);
+  --color-accent-400: oklch(.872 .158 101);
+  --color-accent-500: oklch(.845 .177 101);
+  --color-accent-200: oklch(.934 .098 101);
+  --color-accent-600: oklch(.762 .168 101);
+  --color-primary-50: oklch(.969 .014 25);
+  --color-primary-400: oklch(.658 .192 27);
+  --color-primary-800: oklch(.34 .148 27);
+  --color-background-500: oklch(.468 .006 58);
+}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-page="home" data-header="reveal">
+<div class="relative min-h-screen bg-background-50 text-foreground-950 font-sans">
+<div aria-hidden="true" class="shader-layer"><span class="shader-orb shader-orb-accent left-[-12%] top-[6%] w-[520px] h-[520px]"></span><span class="shader-orb shader-orb-primary right-[-14%] top-[46%] w-[620px] h-[620px]"></span><span class="shader-grid"></span><span class="shader-sweep"></span><span class="shader-scan"></span><span class="shader-grain"></span></div>
+<div class="relative z-10">
+
+<div id="site-header"></div>
+
+<main id="top">
+<!-- HERO: fijo durante 2,4 pantallas de scroll -->
+<div id="pin" style="background:#0A0A0B">
+  <section id="hero" class="sticky top-0 h-[100svh] min-h-[560px] max-h-[1080px] overflow-hidden bg-[#0A0A0B]">
+    <div class="absolute inset-0 overflow-hidden"><img id="h-red" alt="Ferrari deportivo rojo en un estudio oscuro de Madrid" class="w-full h-full object-cover object-center will-change-transform [backface-visibility:hidden]" style="transform-origin:50% 54%;transform:scale(2.4)" src="img/hero-red.jpg"></div>
+    <div class="absolute inset-0 overflow-hidden"><img id="h-blk" alt="Detalle del frontal de un Ferrari con el escudo amarillo" class="w-full h-full object-cover object-center will-change-transform [backface-visibility:hidden]" style="transform-origin:50% 45%" src="img/hero-black.jpg"></div>
+    <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/85 via-transparent to-black/30"></div>
+    <div id="h-glow" class="absolute inset-x-0 bottom-0 h-[46%] pointer-events-none hero-floor-glow"></div>
+    <div id="h-dark" class="absolute inset-0 pointer-events-none bg-[#050506] opacity-0"></div>
+    <div id="h-word" class="absolute inset-x-0 bottom-0 z-10 px-4 pb-8 md:pb-12 flex flex-col items-center text-center">
+      <div class="relative flex flex-col items-center">
+        <span class="hero-wordmark-light"></span>
+        <h1 class="relative flex items-end justify-center overflow-hidden leading-[0.9]"><span class="sr-only">Ferrari Madrid</span>
+          <span aria-hidden="true" class="wordmark hero-wordmark flex items-end justify-center text-[58px] sm:text-[76px] md:text-[104px] lg:text-[124px] leading-[0.9] tracking-[0.02em]"><span class="hero-letter" style="animation-delay:180ms">F</span><span class="hero-letter" style="animation-delay:250ms">e</span><span class="hero-letter" style="animation-delay:320ms">r</span><span class="hero-letter" style="animation-delay:390ms">r</span><span class="hero-letter" style="animation-delay:460ms">a</span><span class="hero-letter" style="animation-delay:530ms">r</span><span class="hero-letter" style="animation-delay:600ms">i</span></span>
+        </h1>
+        <span class="mt-4 h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-accent-500 to-transparent glow-line"></span>
+      </div>
+      <span id="h-cue" class="relative mt-6 block h-9 w-px bg-foreground-950/20 overflow-hidden"><span class="hero-cue-run absolute inset-x-0 top-0 h-4 bg-accent-500 glow-dot-accent"></span></span>
+      <span id="h-lbl" class="mt-2 text-[8px] md:text-[9px] uppercase tracking-[0.32em] text-foreground-950/40">Desliza</span>
+    </div>
+    <span class="sr-only">Ferrari Madrid · +34 910 248 900</span>
+  </section>
+</div>
+
+<!-- CONCESIONARIO OFICIAL · MADRID -->
+<section id="concesionario-madrid" class="relative bg-[#08080A] text-foreground-950 overflow-hidden">
+  <span class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-500/70 to-transparent glow-line"></span>
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 py-14 md:py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6">
+      <div class="reveal lg:col-span-5">
+        <div class="flex items-center gap-3"><span class="h-px w-8 bg-primary-500"></span><p class="text-[9px] md:text-[10px] font-semibold uppercase tracking-[0.32em] text-foreground-950/50">Concesionario oficial · Madrid</p></div>
+        <h2 class="mt-5 font-heading uppercase text-[38px] md:text-[54px] leading-[0.94] text-foreground-950">Ferrari Madrid</h2>
+        <p class="mt-4 max-w-[420px] text-[14px] md:text-[15px] text-foreground-950/60 leading-[1.75]">Showroom, atelier de personalización y taller oficial en el mismo espacio. Todo lo que necesita tu Ferrari, en Avenida de Burgos.</p>
+        <div class="mt-7 flex flex-wrap items-center gap-3">
+          <a class="group inline-flex items-center justify-center gap-2 h-11 px-5 bg-primary-500 text-foreground-950 text-[10px] font-semibold uppercase tracking-[0.18em] whitespace-nowrap cursor-pointer transition-colors duration-300 hover:bg-primary-600" href="concesionario.html">Cómo llegar<i class="ri-arrow-right-up-line text-sm transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a>
+          <a class="inline-flex items-center justify-center gap-2 h-11 px-5 border border-foreground-950/25 text-foreground-950 text-[10px] font-semibold uppercase tracking-[0.18em] whitespace-nowrap cursor-pointer transition-colors duration-300 hover:bg-foreground-950 hover:text-background-50" href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div class="reveal lg:col-span-6 lg:col-start-7" style="transition-delay:90ms">
+        <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-7">
+          <div class="flex gap-4"><span class="mt-0.5 w-9 h-9 shrink-0 flex items-center justify-center border border-foreground-950/15 text-primary-500"><i class="ri-map-pin-line text-base"></i></span><div><dt class="text-[9px] uppercase tracking-[0.26em] text-foreground-950/40">Dirección</dt><dd class="mt-2 text-[13px] leading-relaxed text-foreground-950/85">Avenida de Burgos, 12<br>28036 Madrid</dd></div></div>
+          <div class="flex gap-4"><span class="mt-0.5 w-9 h-9 shrink-0 flex items-center justify-center border border-foreground-950/15 text-primary-500"><i class="ri-time-line text-base"></i></span><div><dt class="text-[9px] uppercase tracking-[0.26em] text-foreground-950/40">Horario</dt><dd class="mt-2 text-[13px] leading-relaxed text-foreground-950/85">Lunes – Viernes · 9:00 – 19:30<br>Sábado · 10:00 – 14:00</dd></div></div>
+          <div class="flex gap-4"><span class="mt-0.5 w-9 h-9 shrink-0 flex items-center justify-center border border-foreground-950/15 text-primary-500"><i class="ri-phone-line text-base"></i></span><div><dt class="text-[9px] uppercase tracking-[0.26em] text-foreground-950/40">Teléfono</dt><dd class="mt-2"><a href="tel:+34910248900" class="text-[13px] leading-relaxed text-foreground-950/85 cursor-pointer transition-colors hover:text-accent-400">+34 910 248 900</a></dd></div></div>
+          <div class="flex gap-4"><span class="mt-0.5 w-9 h-9 shrink-0 flex items-center justify-center border border-foreground-950/15 text-primary-500"><i class="ri-mail-line text-base"></i></span><div class="min-w-0"><dt class="text-[9px] uppercase tracking-[0.26em] text-foreground-950/40">Email</dt><dd class="mt-2"><a href="mailto:experiencias@ferrarimadrid.example" class="block break-words text-[12px] md:text-[13px] leading-relaxed text-foreground-950/85 cursor-pointer transition-colors hover:text-accent-400">experiencias@ferrarimadrid.example</a></dd></div></div>
+        </dl>
+      </div>
+    </div>
+    <dl class="mt-12 md:mt-16 grid grid-cols-3 border-t border-foreground-950/10">
+      <div class="reveal"><div class="py-6 md:py-8"><dt class="font-heading text-[26px] md:text-[38px] leading-none text-foreground-950 tabular-nums">1947</dt><span class="mt-3 block h-px w-6 bg-accent-500/70 glow-line"></span><dd class="mt-2 text-[8px] md:text-[10px] uppercase tracking-[0.16em] text-foreground-950/45 leading-[1.6]">Primer Ferrari construido</dd></div></div>
+      <div class="reveal" style="transition-delay:70ms"><div class="py-6 md:py-8 pl-4 md:pl-8 border-l border-foreground-950/10"><dt class="font-heading text-[26px] md:text-[38px] leading-none text-foreground-950 tabular-nums">6</dt><span class="mt-3 block h-px w-6 bg-accent-500/70 glow-line"></span><dd class="mt-2 text-[8px] md:text-[10px] uppercase tracking-[0.16em] text-foreground-950/45 leading-[1.6]">Modelos en exposición</dd></div></div>
+      <div class="reveal" style="transition-delay:140ms"><div class="py-6 md:py-8 pl-4 md:pl-8 border-l border-foreground-950/10"><dt class="font-heading text-[26px] md:text-[38px] leading-none text-foreground-950 tabular-nums">600 m²</dt><span class="mt-3 block h-px w-6 bg-accent-500/70 glow-line"></span><dd class="mt-2 text-[8px] md:text-[10px] uppercase tracking-[0.16em] text-foreground-950/45 leading-[1.6]">Atelier y showroom</dd></div></div>
+    </dl>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section aria-label="Gama Ferrari en exposición" class="relative bg-[#08080A] py-4 md:py-5 overflow-hidden">
+  <span aria-hidden="true" class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-foreground-950/20 to-transparent"></span>
+  <span aria-hidden="true" class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-500/50 to-transparent glow-line"></span>
+  <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent-500/40 to-transparent glow-line"></span>
+  <div class="marquee-mask"><div id="marquee" class="marquee-track"></div></div>
+</section>
+
+<!-- 01 CONCESIONARIO OFICIAL -->
+<section id="concesionario" class="relative py-16 md:py-[112px] bg-background-50 overflow-hidden">
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end reveal">
+      <div class="lg:col-span-7">
+        <div class="flex items-center gap-3"><span class="text-[10px] font-semibold tracking-[0.24em] text-primary-500">01</span><span class="h-px w-8 bg-background-400"></span><p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground-600">Concesionario oficial</p></div>
+        <h2 class="mt-4 font-heading uppercase text-[34px] md:text-[56px] leading-[0.92] text-foreground-950">La disciplina de Maranello, <br class="hidden md:block">en Madrid.</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9"><span class="draw-rule block h-px w-full bg-primary-500/70 mb-5"></span><p class="text-[15px] text-foreground-700 leading-[1.8]">No vendemos coches: acompañamos propietarios. Desde la primera conversación hasta cada revisión posterior, todo ocurre bajo el mismo estándar de fábrica.</p></div>
+    </div>
+    <div class="mt-10 md:mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+      <div class="reveal lg:col-span-5"><div class="relative">
+        <div class="hover-zoom relative h-[300px] sm:h-[380px] lg:h-[480px] overflow-hidden bg-background-200">
+          <img alt="Showroom con un deportivo rojo sobre plataforma iluminada" title="Showroom Ferrari Madrid" class="w-full h-full object-cover object-center" src="img/showroom.jpg">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent"></div>
+          <span class="frame-corner border-l border-t left-4 top-4"></span>
+          <div class="absolute inset-x-0 bottom-0 p-5 md:p-6"><p class="text-[9px] uppercase tracking-[0.26em] text-foreground-950/70">Showroom · 600 m²</p><p class="mt-1.5 font-heading uppercase text-[24px] leading-none text-foreground-950">Avenida de Burgos, 12</p></div>
+        </div>
+        <div class="hidden lg:block hover-zoom absolute -bottom-10 -right-8 w-[176px] h-[216px] overflow-hidden border-[6px] border-foreground-950/15 bg-background-200">
+          <img alt="Muestras de cuero y pintura en el atelier de personalización" class="w-full h-full object-cover object-center" src="img/atelier.jpg">
+          <span class="absolute inset-x-0 bottom-0 px-3 py-2 bg-black/55 text-[8px] uppercase tracking-[0.2em] text-foreground-950/85">Atelier</span>
+        </div>
+      </div></div>
+      <div class="lg:col-span-7 lg:pl-6"><div id="pillars" class="border-t border-background-300"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 LA GAMA -->
+<section id="gama" class="relative py-16 md:py-[112px] bg-background-100 overflow-hidden">
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+    <div class="reveal"><div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-9 md:mb-12">
+      <div>
+        <div class="flex items-center gap-3"><span class="text-[10px] font-semibold tracking-[0.24em] text-primary-500">02</span><span class="h-px w-8 bg-background-400"></span><p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground-600">La gama</p></div>
+        <h2 class="mt-4 font-heading uppercase text-[34px] md:text-[56px] leading-[0.92] max-w-2xl">Seis formas de entender un Ferrari</h2>
+      </div>
+      <a class="group inline-flex items-center gap-2 min-h-[44px] text-[10px] font-semibold uppercase tracking-[0.22em] text-foreground-800 hover:text-primary-600 whitespace-nowrap cursor-pointer transition-colors" href="modelos.html"><span class="border-b border-background-400 pb-1 transition-colors group-hover:border-primary-500">Ver todos los modelos</span><i class="ri-arrow-right-up-line text-base transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a>
+    </div></div>
+    <div id="gama-grid" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10"></div>
+  </div>
+</section>
+
+<!-- EL CONCESIONARIO (cifras) -->
+<section class="relative bg-[#08080A] text-foreground-950 overflow-hidden">
+  <span class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary-500/60 to-transparent"></span>
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 py-16 md:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end">
+      <div class="reveal lg:col-span-7">
+        <div class="flex items-center gap-3"><span class="h-px w-8 bg-primary-500"></span><p class="text-[9px] md:text-[10px] font-semibold uppercase tracking-[0.32em] text-foreground-950/50">El concesionario</p></div>
+        <h2 class="mt-4 font-heading uppercase text-[34px] md:text-[54px] leading-[0.92] text-foreground-950">Un servicio que se mide <br class="hidden md:block">en décadas, no en meses.</h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9">
+        <p class="text-[14px] md:text-[15px] text-foreground-950/60 leading-[1.75]">Veintiocho años representando a la marca en Madrid. Taller propio, equipo certificado y una forma de trabajar que empieza mucho antes de la entrega.</p>
+        <a class="group mt-6 inline-flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-foreground-950 cursor-pointer" href="concesionario.html"><span class="border-b border-foreground-950/30 pb-1 transition-colors group-hover:border-primary-500">Conocer el concesionario</span><i class="ri-arrow-right-up-line text-sm text-primary-500 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i></a>
+      </div>
+    </div>
+    <dl id="stats" class="mt-12 md:mt-16 grid grid-cols-2 lg:grid-cols-4 border-t border-foreground-950/10"></dl>
+    <div class="reveal mt-10 md:mt-14">
+      <div class="hover-zoom relative overflow-hidden bg-background-200 aspect-[16/10] sm:aspect-[16/7] lg:aspect-[21/8]">
+        <img alt="Taller oficial con un Ferrari rojo elevado sobre plataforma" class="absolute inset-0 w-full h-full object-cover object-center" src="img/taller.jpg">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+        <span class="absolute left-0 top-0 w-full h-[3px] bg-primary-500"></span>
+        <span class="frame-corner border-l border-t left-5 top-5"></span><span class="frame-corner border-r border-t right-5 top-5"></span>
+        <div class="absolute inset-x-0 bottom-0 p-5 md:p-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div><p class="text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-accent-400">Servicio oficial</p><p class="mt-2 font-heading uppercase text-[24px] md:text-[34px] leading-none text-foreground-950">Diagnóstico y utillaje de fábrica</p></div>
+          <p class="text-[11px] md:text-[12px] text-foreground-950/65 max-w-xs leading-relaxed">14 técnicos certificados, cabina de pintura propia y registro digital de cada intervención.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 EL RECORRIDO -->
+<section class="py-16 md:py-[112px] bg-background-50">
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+    <div class="reveal"><div class="flex flex-col md:flex-row md:items-end justify-between gap-5">
+      <div>
+        <div class="flex items-center gap-3"><span class="text-[10px] font-semibold tracking-[0.24em] text-primary-500">04</span><span class="h-px w-8 bg-background-400"></span><p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground-600">El recorrido</p></div>
+        <h2 class="mt-4 font-heading uppercase text-[34px] md:text-[56px] leading-[0.92]">Del primer saludo a la entrega</h2>
+      </div>
+      <p class="text-[14px] text-foreground-700 max-w-sm leading-[1.75]">Cuatro etapas acompañadas por la misma persona: tu asesor de producto.</p>
+    </div></div>
+    <div class="mt-9 md:mt-12" role="tablist" aria-label="Etapas del recorrido"><div id="step-tabs" class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2 border-t border-background-300"></div></div>
+    <div class="mt-8 md:mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div id="step-text" class="lg:col-span-5"></div>
+      <div class="lg:col-span-7 lg:col-start-6">
+        <div class="hover-zoom relative aspect-[16/10] overflow-hidden bg-background-200">
+          <span id="step-imgs"></span>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent pointer-events-none"></div>
+          <span class="frame-corner border-l border-t left-4 top-4"></span>
+          <div id="step-cap" class="absolute inset-x-0 bottom-0 p-5 md:p-6 pointer-events-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 PROPIETARIOS -->
+<section class="py-16 md:py-[112px] bg-background-200">
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+    <div class="reveal"><div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-start">
+      <div class="md:col-span-4">
+        <div class="flex items-center gap-3"><span class="text-[10px] font-semibold tracking-[0.24em] text-primary-500">05</span><span class="h-px w-8 bg-background-400"></span><p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground-600">Propietarios</p></div>
+        <h2 class="mt-4 font-heading uppercase text-[34px] md:text-[46px] leading-[0.94]">Quien ya conduce uno</h2>
+        <p class="mt-4 text-[14px] text-foreground-700 leading-[1.75] max-w-xs">Historiales reales de entrega y servicio en nuestro concesionario de Madrid.</p>
+        <div id="t-dots" class="mt-7 flex items-center gap-2"></div>
+      </div>
+      <div class="md:col-span-8"><div class="bg-background-50 border border-background-300 px-6 py-8 md:px-10 md:py-11">
+        <div id="t-body"></div>
+        <div class="mt-8 flex items-center justify-between border-t border-background-300 pt-5">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-foreground-500">Concesionario · Madrid</p>
+          <div class="flex items-center gap-2">
+            <button id="t-prev" type="button" aria-label="Testimonio anterior" class="group w-11 h-11 flex items-center justify-center border border-background-400 text-foreground-800 hover:border-foreground-950 hover:bg-foreground-950 hover:text-foreground-50 transition-colors cursor-pointer"><i class="ri-arrow-left-line transition-transform duration-300 group-hover:-translate-x-0.5"></i></button>
+            <button id="t-next" type="button" aria-label="Siguiente testimonio" class="group w-11 h-11 flex items-center justify-center border border-background-400 text-foreground-800 hover:border-foreground-950 hover:bg-foreground-950 hover:text-foreground-50 transition-colors cursor-pointer"><i class="ri-arrow-right-line transition-transform duration-300 group-hover:translate-x-0.5"></i></button>
+          </div>
+        </div>
+      </div></div>
+    </div></div>
+    <p class="mt-5 text-[9px] uppercase tracking-[0.18em] text-foreground-500 text-center md:text-right">Testimonios ilustrativos para demostración</p>
+  </div>
+</section>
+
+<!-- 06 PRUEBA DE CONDUCCIÓN -->
+<section id="prueba" class="relative py-16 md:py-24 lg:py-[112px] bg-background-100 overflow-hidden">
+  <div class="relative mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 grid grid-cols-1 lg:grid-cols-12 lg:items-stretch gap-12 lg:gap-x-[72px]">
+    <div class="lg:col-span-5 flex flex-col lg:h-full">
+      <div>
+        <div class="flex items-center gap-3"><span class="text-[10px] font-semibold tracking-[0.24em] text-primary-500">06</span><span class="h-px w-8 bg-background-400"></span><p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground-600">Prueba de conducción</p></div>
+        <h2 class="mt-4 font-heading uppercase text-[34px] sm:text-[42px] md:text-[56px] lg:text-[48px] xl:text-[56px] leading-[0.9]">Siéntalo <span class="text-primary-500">en carretera.</span></h2>
+        <p class="mt-5 text-[15px] text-foreground-700 max-w-sm leading-[1.8]">Elige modelo y fecha. Preparamos el coche y una ruta por la sierra para que la decisión se tome conduciendo.</p>
+        <ul class="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+          <li class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.14em] text-foreground-700"><span class="w-5 h-5 flex items-center justify-center text-primary-500 text-sm"><i class="ri-time-line"></i></span>Respuesta en 24 h</li>
+          <li class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.14em] text-foreground-700"><span class="w-5 h-5 flex items-center justify-center text-primary-500 text-sm"><i class="ri-roadster-line"></i></span>Ruta por la sierra</li>
+          <li class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.14em] text-foreground-700"><span class="w-5 h-5 flex items-center justify-center text-primary-500 text-sm"><i class="ri-shield-check-line"></i></span>Sin compromiso</li>
+        </ul>
+      </div>
+      <div class="relative my-8 lg:my-7 h-[240px] md:h-[320px] lg:h-auto lg:flex-1 lg:min-h-[300px] overflow-hidden bg-background-300 hover-zoom">
+        <img alt="Detalle de la rueda y el freno cerámico de un deportivo rojo" title="Ferrari — detalle de llanta y freno cerámico" class="absolute inset-0 w-full h-full object-cover object-center" src="img/wheel.jpg">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        <span class="absolute left-0 top-0 w-full h-[3px] bg-primary-500"></span><span class="frame-corner border-l border-t left-4 top-4"></span>
+        <div class="absolute inset-x-0 bottom-0 p-5"><p class="text-[9px] uppercase tracking-[0.26em] text-accent-400">Frenos carbono-cerámicos CCM</p><p class="mt-1.5 font-heading uppercase text-[20px] leading-none text-foreground-950">Preparado para la sierra</p></div>
+      </div>
+      <dl class="flex flex-col gap-3.5">
+        <div class="flex flex-wrap items-baseline gap-x-6 gap-y-1 text-sm border-b border-background-300/70 pb-3"><dt class="w-24 shrink-0 text-[9px] uppercase tracking-[0.18em] text-foreground-600">Teléfono</dt><dd class="text-foreground-900"><a href="tel:+34910248900" class="hover:text-primary-600 transition-colors cursor-pointer">+34 910 248 900</a></dd></div>
+        <div class="flex flex-wrap items-baseline gap-x-6 gap-y-1 text-sm border-b border-background-300/70 pb-3"><dt class="w-24 shrink-0 text-[9px] uppercase tracking-[0.18em] text-foreground-600">Showroom</dt><dd class="text-foreground-900">Avenida de Burgos, 12, 28036 Madrid</dd></div>
+        <div class="flex flex-wrap items-baseline gap-x-6 gap-y-1 text-sm border-b border-background-300/70 pb-3"><dt class="w-24 shrink-0 text-[9px] uppercase tracking-[0.18em] text-foreground-600">Horario</dt><dd class="text-foreground-900">Lunes – Viernes · 9:00 – 19:30</dd></div>
+      </dl>
+    </div>
+    <div class="lg:col-span-7 flex flex-col lg:pt-[54px] xl:pt-[64px]">
+      <form id="test-drive-form" data-test-drive novalidate class="relative flex flex-col flex-1">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
+          <div class="min-w-0"><label for="td-name" class="fl">Nombre y apellidos</label><input id="td-name" name="name" type="text" required placeholder="Nombre completo" class="fi"></div>
+          <div class="min-w-0"><label for="td-phone" class="fl">Teléfono</label><input id="td-phone" name="phone" type="tel" required placeholder="+34 600 000 000" class="fi"></div>
+          <div class="sm:col-span-2 min-w-0"><label for="td-email" class="fl">Correo electrónico</label><input id="td-email" name="email" type="email" required placeholder="nombre@correo.com" class="fi"></div>
+          <div class="min-w-0"><label for="td-model" class="fl">Modelo</label><div class="relative">
+            <select id="td-model" name="model" required class="fi appearance-none pr-10 cursor-pointer [&>option]:bg-background-100 [&>option]:text-foreground-950"><option value="">Elige un modelo</option><option>Roma Spider</option><option>296 GTB</option><option>SF90 Stradale</option><option>Purosangue</option><option>12Cilindri</option><option>Daytona SP3</option><option>Aún no lo sé</option></select>
+            <span class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center text-foreground-600"><i class="ri-arrow-down-s-line"></i></span></div></div>
+          <!-- shortcut: fecha con selector nativo; el original usa un calendario propio en popover -->
+          <div class="min-w-0"><label for="td-date" class="fl">Fecha preferida</label><input id="td-date" name="date" type="date" lang="es-ES" class="fi cursor-pointer"></div>
+          <div class="sm:col-span-2 min-w-0"><label for="td-message" class="fl">Comentarios (opcional)</label><textarea id="td-message" name="message" rows="3" maxlength="500" placeholder="Configuración de interés, disponibilidad horaria, dudas sobre la gama…" class="fi h-auto py-3 resize-none min-h-[84px]"></textarea><div class="flex justify-between"><span class="td-count ml-auto mt-1.5 text-xs text-foreground-500">0/500</span></div></div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-between gap-4 sm:items-end mt-9 lg:mt-auto lg:pt-8">
+          <p id="td-note" role="status" class="text-[11px] text-foreground-600 leading-[1.5] max-w-[260px]">Confirmamos cada prueba por teléfono. Sin compromiso de compra.</p>
+          <button type="submit" class="group self-start sm:self-auto min-h-[48px] inline-flex items-center gap-3 border-b border-foreground-500 hover:border-primary-500 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-primary-500 text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground-950 whitespace-nowrap cursor-pointer transition-colors duration-200">Solicitar prueba<span class="w-5 h-5 flex items-center justify-center text-primary-500 text-lg transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"><i class="ri-arrow-right-up-line"></i></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+</div></div>
+
+<script src="site.js"></script>
+<script>
+const STEPS=[
+ {k:'Selección',h:'Elige tu Ferrari',d:'Recorre la gama con un especialista de producto. Sin prisas, con el coche delante y todas las preguntas sobre la mesa.',f:'Showroom de 600 m² en Madrid'},
+ {k:'Configuración',h:'Atelier de personalización',d:'Definimos contigo pintura, cuero, costuras y detalles de carbono. Tu configuración queda registrada en fábrica.',f:'Más de 200 muestras de cuero'},
+ {k:'Prueba',h:'Prueba de conducción',d:'Sal a carretera con un especialista. Una ruta diseñada para entender el chasis, el motor y el carácter del modelo.',f:'Rutas por la sierra de Madrid'},
+ {k:'Entrega',h:'Entrega en el atelier',d:'El día de la entrega el coche espera bajo una luz preparada para la ocasión. Documentación, historial y primera puesta a punto.',f:'Seguimiento posterior con tu asesor'}];
+const TESTI=[
+ {q:'Me explicaron cada diferencia entre configuraciones con el coche delante. Salí sabiendo exactamente lo que estaba pidiendo a fábrica.',n:'Alejandro R.',m:'Roma Spider · 2025'},
+ {q:'La prueba de conducción fue una ruta de verdad, no una vuelta a la manzana. Entendí el coche antes de firmar nada.',n:'Marta L.',m:'296 GTB · 2024'},
+ {q:'El servicio oficial mantiene el historial impecable. Cada revisión llega con informe, fotos y explicación técnica.',n:'Ignacio B.',m:'12Cilindri · 2025'},
+ {q:'Pedí una combinación de cuero y pintura poco habitual. El atelier la resolvió sin cambiar una sola línea del diseño original.',n:'Carla V.',m:'Purosangue · 2025'}];
+const PILLARS=[['ri-award-line','Herencia de Maranello','Cada unidad que entregamos mantiene la especificación original de fábrica, su historial documentado y la trazabilidad completa de su procedencia.'],
+ ['ri-palette-line','Atelier de personalización','Cuero, Alcántara, fibra de carbono y pinturas históricas. Nuestro atelier te acompaña en cada decisión de configuración, muestra a muestra.'],
+ ['ri-tools-line','Servicio oficial','Técnicos certificados Ferrari, utillaje específico y diagnóstico de fábrica. Tu coche se mantiene exactamente como salió de Maranello.']];
+const STATS=[['1998','Año de apertura del concesionario',''],['2.400','Ferrari entregados','border-l border-foreground-950/10'],['14','Técnicos certificados','border-t lg:border-t-0 border-foreground-950/10 lg:border-l'],['98%','Clientes que repiten servicio','border-l border-foreground-950/10 border-t lg:border-t-0']];
+
+// Marquee: dos copias para el bucle a -50%
+const mq=MODELS.map(m=>`<div class="flex items-center gap-5 md:gap-7 px-5 md:px-8"><span class="font-heading uppercase text-[14px] md:text-[17px] tracking-[0.12em] text-foreground-950/85 whitespace-nowrap">${m.n}</span><span class="hidden sm:block text-[8px] md:text-[9px] uppercase tracking-[0.3em] text-foreground-950/35 whitespace-nowrap">${m.t}</span><span class="w-[5px] h-[5px] rounded-full bg-primary-500 shrink-0 glow-line-red"></span></div>`).join('')+`<span class="font-heading uppercase text-[14px] md:text-[17px] tracking-[0.12em] text-accent-500/80 whitespace-nowrap px-5 md:px-8">Maranello · Madrid</span><span class="w-[5px] h-[5px] rounded-full bg-primary-500 shrink-0 glow-line-red"></span>`;
+$('#marquee').innerHTML=[0,1].map(i=>`<div class="flex items-center shrink-0" aria-hidden="${!!i}">${mq}</div>`).join('');
+
+$('#pillars').innerHTML=PILLARS.map((p,i)=>`<div class="reveal" style="transition-delay:${i*80}ms"><div class="group relative grid grid-cols-[auto_1fr] gap-5 md:gap-7 py-6 md:py-8 border-b border-background-300 transition-colors duration-300 hover:border-primary-300"><span class="absolute left-0 top-0 h-[2px] w-0 bg-primary-500 transition-all duration-500 group-hover:w-16"></span><div class="flex flex-col items-start gap-2"><span class="font-heading text-[12px] tracking-[0.24em] text-primary-500">${pad(i)}</span><span class="w-9 h-9 flex items-center justify-center border border-background-300 text-foreground-700 text-lg transition-colors duration-300 group-hover:border-primary-500 group-hover:bg-primary-500 group-hover:text-foreground-950"><i class="${p[0]}"></i></span></div><div><h3 class="font-heading uppercase text-[22px] md:text-[27px] leading-tight text-foreground-950 transition-colors duration-300 group-hover:text-primary-700">${p[1]}</h3><p class="mt-2 text-[14px] md:text-[15px] text-foreground-700 leading-[1.7] max-w-xl">${p[2]}</p></div></div></div>`).join('');
+
+$('#stats').innerHTML=STATS.map((s,i)=>`<div class="reveal" style="transition-delay:${i*70}ms"><div class="group px-1 sm:px-3 lg:px-6 py-6 md:py-8 h-full transition-colors duration-500 hover:bg-foreground-950/[0.03] ${s[2]}"><span class="font-heading text-[10px] tracking-[0.24em] text-primary-500">${pad(i)}</span><dt class="mt-3 font-heading text-[38px] md:text-[54px] leading-none text-foreground-950 tabular-nums transition-colors duration-300 group-hover:text-accent-500">${s[0]}</dt><dd class="mt-3 text-[10px] md:text-[11px] uppercase tracking-[0.16em] text-foreground-950/45 leading-[1.6] max-w-[180px]">${s[1]}</dd></div></div>`).join('');
+
+// Gama
+function gama(k){const m=MODELS[k];
+ $('#gama-grid').innerHTML=`<div class="lg:col-span-7">
+  <div class="hover-zoom relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-background-200">
+   <img alt="Ferrari ${m.n}" title="Ferrari ${m.n} — ${m.t}" class="fade-swap absolute inset-0 w-full h-full object-cover object-center" src="${img(m,'g1')}">
+   <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+   <span class="frame-corner border-l border-t left-4 top-4"></span><span class="frame-corner border-r border-t right-4 top-4"></span>
+   <div class="absolute inset-x-0 top-0 p-4 md:p-5 flex items-start justify-between gap-3"><span class="bg-background-50/95 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.2em] text-foreground-950">${m.t}</span><span class="text-[9px] uppercase tracking-[0.24em] text-foreground-950/70 tabular-nums">${pad(k)} / 06</span></div>
+   <div class="absolute inset-x-0 bottom-0 p-5 md:p-7 flex items-end justify-between gap-4"><div><a class="font-heading uppercase text-[30px] md:text-[44px] leading-none text-foreground-950 hover:text-accent-400 cursor-pointer transition-colors duration-300" href="modelo.html?m=${m.s}">${m.n}</a><p class="mt-2 text-[11px] uppercase tracking-[0.18em] text-accent-400">${m.l}</p></div><span class="hidden sm:inline-flex items-center gap-2 border border-foreground-950/25 px-3 py-1.5 text-[9px] uppercase tracking-[0.18em] text-foreground-950/80 whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-primary-500"></span>${m.c}</span></div>
+  </div>
+  <dl class="grid grid-cols-3 bg-[#08080A] text-foreground-950">${[['Potencia',m.cv],['0–100 km/h',m.a],['Velocidad máx.',m.v]].map((s,i)=>`<div class="px-4 py-4 md:px-6 md:py-5 ${i?'border-l border-foreground-950/10':''}"><dt class="text-[8px] md:text-[9px] uppercase tracking-[0.2em] text-foreground-950/45">${s[0]}</dt><dd class="mt-1.5 font-heading text-[20px] md:text-[27px] leading-none text-foreground-950">${s[1]}</dd></div>`).join('')}</dl>
+  <div class="mt-4 grid grid-cols-6 gap-2">${MODELS.map((x,i)=>`<button type="button" data-m="${i}" aria-label="Ver ${x.n}" aria-pressed="${i==k}" class="group relative h-12 md:h-16 overflow-hidden bg-background-300 cursor-pointer transition-all duration-300 ${i==k?'ring-2 ring-primary-500 ring-offset-2 ring-offset-background-100':'opacity-55 hover:opacity-100'}"><img alt="" loading="lazy" class="w-full h-full object-cover object-center" src="${img(x,'g1',1)}"><span class="absolute inset-0 bg-black/25 transition-opacity duration-300 ${i==k?'opacity-0':'opacity-100 group-hover:opacity-0'}"></span></button>`).join('')}</div>
+ </div>
+ <div class="lg:col-span-5 flex flex-col">
+  <div role="tablist" aria-label="Gama Ferrari" class="flex flex-col border-t border-background-300">${MODELS.map((x,i)=>{const on=i==k;return `<button type="button" role="tab" data-m="${i}" aria-selected="${on}" class="group relative w-full text-left cursor-pointer border-b border-background-300 flex items-center gap-4 md:gap-5 py-3.5 md:py-4"><span class="absolute left-0 bottom-[-1px] h-[2px] bg-primary-500 transition-all duration-300 ${on?'w-16':'w-0'}"></span><span class="w-6 text-[10px] tracking-[0.16em] tabular-nums transition-colors ${on?'text-primary-600':'text-foreground-500'}">${pad(i)}</span><span class="flex-1 min-w-0"><span class="block font-heading uppercase text-[19px] md:text-[22px] leading-none tracking-wide transition-colors duration-300 ${on?'text-foreground-950':'text-foreground-600 group-hover:text-foreground-900'}">${x.n}</span><span class="mt-1 block text-[10px] uppercase tracking-[0.18em] transition-colors ${on?'text-foreground-600':'text-foreground-500'}">${x.t}</span></span><span class="w-5 h-5 flex items-center justify-center text-sm transition-all duration-300 ${on?'opacity-100 text-primary-500':'opacity-0 -translate-x-1 text-foreground-600 group-hover:opacity-60'}"><i class="ri-arrow-right-line"></i></span></button>`}).join('')}</div>
+  <div role="tabpanel" class="fade-swap mt-6 md:mt-7 flex-1 flex flex-col">
+   <p class="font-heading uppercase text-[18px] md:text-[21px] leading-snug text-foreground-950 max-w-[520px]">${m.l}</p>
+   <p class="mt-3 text-[14px] text-foreground-700 leading-[1.75] max-w-[520px]">${m.d}</p>
+   <div class="mt-auto pt-6"><div class="flex flex-col sm:flex-row sm:items-center gap-4 justify-between border-t border-background-300 pt-5">
+    <div class="flex flex-col gap-2"><p class="text-[13px] font-semibold text-foreground-900">${m.p}</p><a class="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-foreground-600 hover:text-accent-400 whitespace-nowrap cursor-pointer transition-colors" href="modelo.html?m=${m.s}">Ficha técnica<i class="ri-arrow-right-line text-sm"></i></a></div>
+    <a class="group/cta inline-flex items-center justify-center gap-3 h-11 px-5 bg-foreground-950 text-foreground-50 text-[10px] font-semibold uppercase tracking-[0.2em] whitespace-nowrap cursor-pointer transition-colors duration-300 hover:bg-primary-500" href="contacto.html?modelo=${m.s}">Solicitar prueba<i class="ri-arrow-right-up-line text-sm transition-transform duration-300 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"></i></a>
+   </div></div>
+  </div>
+ </div>`}
+gama(0);
+addEventListener('load',()=>MODELS.forEach(m=>{new Image().src=img(m,'g1')}));
+$('#gama-grid').addEventListener('click',e=>{const b=e.target.closest('[data-m]');if(b)gama(+b.dataset.m)});
+
+// Recorrido
+$('#step-imgs').innerHTML=STEPS.map((s,i)=>`<img alt="${s.h}" title="${s.h} — Ferrari Madrid" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700" src="img/step${i+1}.jpg">`).join('');
+function step(k){const s=STEPS[k];
+ $('#step-tabs').innerHTML=STEPS.map((x,i)=>{const on=i==k;return `<button type="button" role="tab" data-s="${i}" aria-selected="${on}" class="group relative text-left cursor-pointer pt-5 pb-4 md:pb-5 outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-500"><span class="absolute left-0 top-0 h-[2px] bg-primary-500 transition-all duration-300 ${on?'w-full':'w-0 group-hover:w-1/3'}"></span><span class="block font-heading text-[11px] tracking-[0.24em] ${on?'text-primary-600':'text-foreground-500'}">${pad(i)}</span><span class="mt-2 block font-heading uppercase text-[18px] md:text-[22px] leading-none transition-colors ${on?'text-foreground-950':'text-foreground-500 group-hover:text-foreground-800'}">${x.k}</span></button>`}).join('');
+ $('#step-text').innerHTML=`<div class="fade-swap"><span class="inline-flex items-center gap-2 bg-primary-500 text-foreground-950 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.2em]">Etapa ${pad(k)} / 04</span><h3 class="mt-5 font-heading uppercase text-[30px] md:text-[42px] leading-[0.94] text-foreground-950">${s.h}</h3><p class="mt-4 text-[15px] text-foreground-700 leading-[1.8] max-w-[440px]">${s.d}</p><p class="mt-6 flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-foreground-600"><span class="w-1.5 h-1.5 bg-accent-500"></span>${s.f}</p></div>`;
+ $('#step-cap').innerHTML=`<p class="text-[9px] uppercase tracking-[0.26em] text-accent-400">${s.k}</p><p class="mt-1.5 font-heading uppercase text-[22px] md:text-[26px] leading-none text-foreground-950">${s.h}</p>`;
+ $$('#step-imgs img').forEach((im,i)=>{im.style.opacity=i==k?1:0;im.style.transform=i==k?'':'scale(1.03)'})}
+step(0);
+$('#step-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b)step(+b.dataset.s)});
+
+// Testimonios
+let ti=0;
+function testi(k){ti=(k+TESTI.length)%TESTI.length;const t=TESTI[ti];
+ $('#t-dots').innerHTML=TESTI.map((_,i)=>`<button type="button" data-t="${i}" aria-label="Testimonio ${i+1}" aria-pressed="${i==ti}" class="h-[3px] cursor-pointer transition-all duration-300 ${i==ti?'w-8 bg-primary-500':'w-4 bg-background-400 hover:bg-foreground-400'}"></button>`).join('');
+ $('#t-body').innerHTML=`<div class="fade-swap"><div class="flex items-start justify-between gap-6"><i class="ri-double-quotes-l text-[30px] text-primary-500"></i><span class="font-heading text-[11px] tracking-[0.24em] text-foreground-400 tabular-nums">${pad(ti)} / 04</span></div><blockquote class="mt-2 text-[19px] md:text-[26px] leading-[1.45] text-foreground-950 max-w-2xl">${t.q}</blockquote><div class="mt-7 flex items-center gap-4"><span class="w-11 h-11 flex items-center justify-center bg-foreground-950 text-foreground-50 font-heading text-[15px] tracking-[0.06em]">${t.n[0]}</span><div><p class="font-heading uppercase text-[15px] tracking-[0.08em] text-foreground-950">${t.n}</p><p class="mt-0.5 text-[10px] uppercase tracking-[0.16em] text-foreground-600">${t.m}</p></div></div></div>`}
+testi(0);
+$('#t-prev').onclick=()=>testi(ti-1);$('#t-next').onclick=()=>testi(ti+1);
+$('#t-dots').addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(b)testi(+b.dataset.t)});
+
+
+// HERO: valores medidos del original a 20 posiciones de scroll (p = progreso 0..1 sobre 2,4 pantallas)
+const cl=x=>Math.min(1,Math.max(0,x)), outQ=t=>1-(1-t)*(1-t), ioQ=t=>t<.5?2*t*t:1-2*(1-t)*(1-t);
+function heroAt(p){const w=outQ(cl(p/.25)),c=outQ(cl(p/.1)),g=cl(p/.9);
+ return{word:{o:1-w,y:-88*w,s:1-.035*w},cue:{o:1-c,y:-26*c},
+  blk:{s:1+2.6*ioQ(cl((p-.09)/.32)),o:p<.5?1:0},
+  dark:p<.5?cl((p-.33)/.17):1-.94*(.5-.5*Math.cos(Math.PI*cl((p-.5)/.335))),
+  red:1.1+1.3*Math.pow(1-cl((p-.452)/.503),2.5),glow:{o:1-.3*g,y:-88*g}}}
+{const a=heroAt(0),b=heroAt(1);console.assert(a.word.o===1&&a.blk.s===1&&a.dark===0&&Math.abs(a.red-2.4)<1e-9&&b.word.o===0&&Math.abs(b.red-1.1)<1e-9&&Math.abs(b.dark-.06)<1e-9,'hero keyframes')}
+const hero=$('#hero'),pin=$('#pin'),E={red:$('#h-red'),blk:$('#h-blk'),dark:$('#h-dark'),word:$('#h-word'),cue:$('#h-cue'),lbl:$('#h-lbl'),glow:$('#h-glow')};
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let cur=0;
+const size=()=>{pin.style.height=hero.offsetHeight*(still?1:3.4)+'px'};
+size();addEventListener('resize',size);
+function frame(){
+ const dist=pin.offsetHeight-hero.offsetHeight, target=dist?cl(scrollY/dist):1;
+ cur+=(target-cur)*(still?1:.14); if(Math.abs(target-cur)<.0005)cur=target;   // suavizado tipo "scrub"
+ const h=heroAt(still?1:cur);
+ E.word.style.cssText=`opacity:${h.word.o};transform:translateY(${h.word.y}px) scale(${h.word.s})`;
+ E.cue.style.cssText=E.lbl.style.cssText=`opacity:${h.cue.o};transform:translateY(${h.cue.y}px)`;
+ E.blk.style.transform=`scale(${h.blk.s})`;E.blk.style.opacity=h.blk.o;
+ E.dark.style.opacity=h.dark;E.red.style.transform=`scale(${h.red})`;
+ E.glow.style.cssText=`opacity:${h.glow.o};transform:translateY(${h.glow.y}px)`;
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+:root{--font-heading:"Saira Condensed",sans-serif;--font-wordmark:"Cormorant Garamond",serif;
+--foreground-950:.985 .002 90;--primary-500:.545 .226 27;--accent-300:.905 .132 101;--accent-400:.872 .158 101;--accent-500:.845 .177 101}
+html{background:oklch(.142 .004 60)}
+.font-heading{font-family:var(--font-heading)}
+.wordmark{font-family:var(--font-wordmark);letter-spacing:.01em;font-style:italic;font-weight:500}
+.reveal{opacity:0;filter:blur(4px);transform:translateY(14px);transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1),filter .55s cubic-bezier(.22,1,.36,1)}
+.reveal.is-visible{opacity:1;filter:none;transform:none}
+.reveal .draw-rule{transform-origin:0 center;transform:scaleX(0);transition:transform .9s cubic-bezier(.215,.61,.355,1) .15s}
+.reveal.is-visible .draw-rule{transform:scaleX(1)}
+.glow-line{box-shadow:0 0 12px oklch(var(--accent-500)/.45),0 0 34px oklch(var(--accent-500)/.18)}
+.glow-line-red{box-shadow:0 0 12px oklch(var(--primary-500)/.5),0 0 34px oklch(var(--primary-500)/.2)}
+.glow-dot-accent{box-shadow:0 0 10px oklch(var(--accent-400)/.7),0 0 26px oklch(var(--accent-500)/.35)}
+.hero-wordmark{color:oklch(.995 .004 100);text-shadow:0 0 14px oklch(var(--accent-400)/.5),0 0 44px oklch(var(--accent-500)/.32),0 0 96px oklch(var(--accent-500)/.16);animation:heroWordGlow 5.5s ease-in-out infinite}
+@keyframes heroWordGlow{0%,100%{text-shadow:0 0 12px oklch(var(--accent-400)/.38),0 0 38px oklch(var(--accent-500)/.24),0 0 82px oklch(var(--accent-500)/.12)}50%{text-shadow:0 0 20px oklch(var(--accent-300)/.62),0 0 58px oklch(var(--accent-500)/.4),0 0 120px oklch(var(--accent-500)/.2)}}
+.hero-wordmark-light{background:radial-gradient(ellipse at center,oklch(var(--accent-400)/.3),transparent 62%);filter:blur(30px);pointer-events:none;width:130%;height:240%;animation:heroGlowBreathe 5.5s ease-in-out infinite;position:absolute;top:58%;left:50%;transform:translate(-50%,-50%)}
+@keyframes heroGlowBreathe{0%,100%{opacity:.5;transform:translate(-50%,-50%) scale(1)}50%{opacity:.95;transform:translate(-50%,-50%) scale(1.12)}}
+.hero-cue-run{animation:heroCueRun 2.6s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes heroCueRun{0%{transform:translateY(-100%)}60%,100%{transform:translateY(300%)}}
+.hero-letter{display:inline-block;animation:heroLetter 1.15s cubic-bezier(.22,1,.36,1) both}
+@keyframes heroLetter{0%{opacity:0;filter:blur(16px);transform:translateY(108%) scale(.96)}60%{opacity:1;filter:blur(0)}100%{opacity:1;filter:blur(0);transform:none}}
+.hero-floor-glow{background:radial-gradient(ellipse 62% 42% at 50% 100%,oklch(var(--accent-500)/.16),transparent 72%)}
+.intro-zoom{animation:introZoom .8s cubic-bezier(.215,.61,.355,1) both}
+@keyframes introZoom{0%{transform:scale(1.035)}100%{transform:none}}
+.fade-swap{animation:fadeSwap .45s ease both}
+@keyframes fadeSwap{0%{opacity:0;transform:translateY(6px)}100%{opacity:1;transform:none}}
+.marquee-mask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{will-change:transform;width:max-content;display:flex;animation:marqueeSlide 46s linear infinite}
+.marquee-mask:hover .marquee-track{animation-play-state:paused}
+@keyframes marqueeSlide{0%{transform:translate(0)}100%{transform:translate(-50%)}}
+.hover-zoom img{transition:transform .9s cubic-bezier(.215,.61,.355,1)}
+.hover-zoom:hover img{transform:scale(1.045)}
+.frame-corner{border-color:oklch(var(--foreground-950)/.4);pointer-events:none;width:22px;height:22px;position:absolute}
+.shader-layer{z-index:30;pointer-events:none;position:fixed;inset:0;overflow:hidden}
+.shader-grid{background-image:repeating-linear-gradient(90deg,oklch(var(--foreground-950)/.045) 0 1px,transparent 1px 104px),repeating-linear-gradient(0deg,oklch(var(--foreground-950)/.03) 0 1px,transparent 1px 104px);opacity:.5;position:absolute;inset:0;-webkit-mask-image:radial-gradient(85% 62% at 50% 26%,#000 8%,transparent 74%);mask-image:radial-gradient(85% 62% at 50% 26%,#000 8%,transparent 74%)}
+.shader-scan{opacity:.1;background-image:repeating-linear-gradient(0deg,oklch(0 0 0/.5) 0,oklch(0 0 0/.5) 1px,transparent 1px,transparent 4px);position:absolute;inset:0}
+.shader-grain{background-image:repeating-radial-gradient(circle at 19% 31%,oklch(var(--foreground-950)/.5) 0 .5px,transparent .5px 2px),repeating-radial-gradient(circle at 73% 67%,oklch(0% 0 0/.6) 0 .5px,transparent .5px 2.6px);opacity:.05;background-size:3px 3px,4px 4px;animation:shaderGrain 1.4s step-end infinite;position:absolute;inset:-8px}
+@keyframes shaderGrain{0%{transform:translate(0)}20%{transform:translate(-1px,1px)}40%{transform:translate(1px,-1px)}60%{transform:translate(-1px,-1px)}80%{transform:translate(1px,1px)}100%{transform:translate(0)}}
+.shader-sweep{background:linear-gradient(104deg,transparent 40%,oklch(var(--accent-500)/.05) 47%,oklch(var(--foreground-950)/.05) 50%,oklch(var(--accent-500)/.03) 53%,transparent 60%);filter:blur(10px);will-change:transform;width:220%;height:140%;animation:shaderSweep 26s cubic-bezier(.45,0,.55,1) infinite;position:absolute;top:-20%;left:0}
+@keyframes shaderSweep{0%,100%{transform:translate(-46%) rotate(-2deg)}50%{transform:translate(22%) rotate(2deg)}}
+.shader-orb{filter:blur(90px);opacity:.34;border-radius:9999px;animation:shaderOrb 22s ease-in-out infinite;position:absolute}
+.shader-orb-accent{background:radial-gradient(circle,oklch(var(--accent-500)/.22),transparent 68%)}
+.shader-orb-primary{background:radial-gradient(circle,oklch(var(--primary-500)/.3),transparent 68%)}
+@keyframes shaderOrb{0%,100%{opacity:.26;transform:translate(0) scale(1)}50%{opacity:.42;transform:translate(2%,-3%) scale(1.14)}}
+input[type=date]::-webkit-calendar-picker-indicator{filter:invert(.7);cursor:pointer}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;filter:none;transition:none;transform:none}.reveal .draw-rule{transition:none;transform:none}
+  .intro-zoom,.hero-wordmark,.hero-wordmark-light,.hero-cue-run,.marquee-track,.shader-grain,.shader-sweep,.shader-orb{animation:none}
+  .hero-letter{opacity:1;filter:none;animation:none;transform:none}.hover-zoom:hover img{transform:none}
+}
+.reveal .reveal-zoom{transform:scale(1.035);transition:transform .75s cubic-bezier(.215,.61,.355,1)}
+.reveal.is-visible .reveal-zoom{transform:none}
+@media (prefers-reduced-motion:reduce){.reveal .reveal-zoom{transition:none;transform:none}}

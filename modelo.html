@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferrari Madrid | Ficha técnica y galería</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Manrope:wght@400;500;600;700&family=Saira+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --color-background-50: oklch(.142 .004 60);
+  --color-background-100: oklch(.178 .005 60);
+  --color-background-200: oklch(.212 .006 58);
+  --color-background-300: oklch(.283 .006 58);
+  --color-background-400: oklch(.362 .006 58);
+  --color-background-500: oklch(.468 .006 58);
+  --color-foreground-50: oklch(.148 .003 60);
+  --color-foreground-400: oklch(.482 .005 60);
+  --color-foreground-500: oklch(.575 .006 60);
+  --color-foreground-600: oklch(.676 .005 60);
+  --color-foreground-700: oklch(.768 .005 60);
+  --color-foreground-800: oklch(.852 .004 60);
+  --color-foreground-900: oklch(.925 .003 60);
+  --color-foreground-950: oklch(.985 .002 90);
+  --color-primary-50: oklch(.969 .014 25);
+  --color-primary-300: oklch(.798 .118 26);
+  --color-primary-400: oklch(.658 .192 27);
+  --color-primary-500: oklch(.545 .226 27);
+  --color-primary-600: oklch(.482 .208 27);
+  --color-primary-700: oklch(.412 .18 27);
+  --color-primary-800: oklch(.34 .148 27);
+  --color-accent-200: oklch(.934 .098 101);
+  --color-accent-400: oklch(.872 .158 101);
+  --color-accent-500: oklch(.845 .177 101);
+  --color-accent-600: oklch(.762 .168 101);
+}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-page="modelos">
+<div class="relative min-h-screen bg-background-50 text-foreground-950 font-sans">
+<div aria-hidden="true" class="shader-layer"><span class="shader-orb shader-orb-accent left-[-12%] top-[6%] w-[520px] h-[520px]"></span><span class="shader-orb shader-orb-primary right-[-14%] top-[46%] w-[620px] h-[620px]"></span><span class="shader-grid"></span><span class="shader-sweep"></span><span class="shader-scan"></span><span class="shader-grain"></span></div>
+<div class="relative z-10">
+<div id="site-header"></div>
+<main id="page"></main>
+<div id="site-footer"></div>
+</div></div>
+
+<script src="site.js"></script>
+<script>
+const m=MODELS.find(x=>x.s===new URLSearchParams(location.search).get('m'));
+if(!m)location.replace('modelos.html');
+else{
+document.title=`Ferrari ${m.n} en Madrid | Ficha técnica y galería`;
+const kicker=(n,t)=>`<div class="flex items-center gap-3"><span class="text-[10px] font-semibold tracking-[0.24em] text-primary-500">${n}</span><span class="h-px w-8 bg-background-400"></span><p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-foreground-600">${t}</p></div>`;
+const head=(n,t,h,side)=>`<div class="reveal"><div class="flex flex-col md:flex-row md:items-end justify-between gap-5 border-b border-background-300 pb-6 mb-9 md:mb-12"><div>${kicker(n,t)}<h2 class="mt-4 font-heading uppercase text-[32px] md:text-[48px] leading-[0.92]">${h}</h2></div><p class="text-[10px] uppercase tracking-[0.18em] text-foreground-500 leading-relaxed max-w-xs">${side}</p></div></div>`;
+const row=(k,v,cls='')=>`<div class="flex items-baseline justify-between gap-4 border-b border-background-300/70 py-3"><dt class="text-[10px] uppercase tracking-[0.16em] text-foreground-600 whitespace-nowrap">${k}</dt><dd class="text-[13px] font-semibold text-foreground-900 text-right ${cls}">${v}</dd></div>`;
+const CTA='inline-flex items-center justify-center gap-3 h-12 px-6 text-[10px] font-semibold uppercase tracking-[0.2em] whitespace-nowrap cursor-pointer transition-colors duration-300';
+const ARROW='<i class="ri-arrow-right-up-line text-base transition-transform duration-300 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"></i>';
+
+$('#page').innerHTML=`
+<section class="relative min-h-[620px] md:h-[70svh] md:max-h-[820px] overflow-hidden bg-background-200">
+ <img class="intro-zoom absolute inset-0 w-full h-full object-cover object-center" alt="Ferrari ${m.n}" src="${img(m,'g1')}">
+ <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10"></div>
+ <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/35"></div>
+ <div class="relative z-10 h-full min-h-[620px] md:min-h-0 w-full mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 flex flex-col justify-between pb-6 md:pb-8 pt-24 md:pt-28">
+  <nav class="flex items-center gap-2 text-[9px] md:text-[10px] uppercase tracking-[0.22em] text-foreground-950/60" aria-label="Ruta de navegación"><a class="hover:text-accent-400 cursor-pointer transition-colors" href="modelos.html">Gama</a><span>/</span><span class="text-foreground-950/90">${m.n}</span></nav>
+  <div class="max-w-3xl">
+   <p class="text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.34em] text-accent-400">${m.t}</p>
+   <h1 class="mt-3 md:mt-4 font-heading uppercase text-[52px] md:text-[84px] lg:text-[100px] leading-[0.86] text-foreground-950">${m.n}</h1>
+   <span class="mt-5 block h-px w-16 bg-primary-500 glow-line-red"></span>
+   <p class="mt-4 text-[14px] md:text-[16px] text-foreground-950/80 max-w-xl leading-relaxed">${m.l}</p>
+   <dl class="mt-8 grid grid-cols-2 md:grid-cols-4 border-t border-foreground-950/15">${[['Potencia',m.cv],['0–100 km/h',m.a],['Velocidad máx.',m.v],['Precio',m.p]].map((s,i)=>`<div class="py-4 md:py-5 ${i?'md:border-l md:border-foreground-950/15 md:pl-5':''} ${i>1?'border-t border-foreground-950/15 md:border-t-0':''}"><dt class="text-[8px] md:text-[9px] uppercase tracking-[0.22em] text-foreground-950/50">${s[0]}</dt><dd class="mt-1.5 font-heading text-[20px] md:text-[24px] leading-none text-foreground-950 whitespace-nowrap">${s[1]}</dd></div>`).join('')}</dl>
+  </div>
+ </div>
+</section>
+
+<section class="py-14 md:py-[104px] bg-background-50">
+ <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+  <div class="reveal lg:col-span-7"><div id="gal"></div></div>
+  <div class="reveal lg:col-span-5" style="transition-delay:90ms">
+   ${kicker('01','Diseño')}
+   <h2 class="mt-4 font-heading uppercase text-[30px] md:text-[42px] leading-[0.94]">${m.l}</h2>
+   ${m.design.map((p,i)=>`<p class="${i?'mt-4':'mt-5'} text-[14px] md:text-[15px] text-foreground-700 leading-[1.75]">${p}</p>`).join('')}
+   <dl class="mt-7 border-t border-background-300">${row('Carrocería',m.t)+row('Color de lanzamiento',m.c)+row('Potencia',m.cv)+row('Precio',m.p)}</dl>
+   <div class="mt-7 flex flex-col sm:flex-row gap-3">
+    <a class="group/cta ${CTA} bg-primary-500 hover:bg-primary-600 text-foreground-950" href="contacto.html?modelo=${m.s}">Solicitar prueba${ARROW}</a>
+    <a class="${CTA} border border-background-400 text-foreground-900 hover:border-accent-500 hover:text-accent-400" href="#configurador">Configurar en el atelier</a>
+   </div>
+   <a class="mt-6 inline-flex items-center gap-2 min-h-[40px] text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground-600 hover:text-foreground-950 whitespace-nowrap cursor-pointer transition-colors" href="modelos.html"><i class="ri-arrow-left-line text-sm"></i>Volver a la gama</a>
+  </div>
+ </div>
+</section>
+
+<section id="configurador" class="py-14 md:py-[104px] bg-background-100 scroll-mt-20">
+ <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+  ${head('02','Configurador','Configura tu '+m.n,'Pintura y llantas · Precio actualizado al instante')}
+  <div class="reveal" style="transition-delay:70ms"><div id="cfg" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10"></div></div>
+ </div>
+</section>
+
+<section class="py-14 md:py-[104px] bg-background-50">
+ <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+  ${head('03','Ficha técnica','Los datos del '+m.n,'Datos de fábrica · Unidad de referencia con equipamiento de serie')}
+  <div class="reveal" style="transition-delay:70ms"><div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-14 gap-y-9 md:gap-y-11">${m.specs.map(([g,rows])=>`<div><h3 class="text-[10px] font-semibold uppercase tracking-[0.26em] text-primary-500">${g}</h3><dl class="mt-3 border-t border-background-300">${rows.map(([k,v])=>`<div class="flex items-baseline justify-between gap-4 border-b border-background-300/70 py-2.5 md:py-3"><dt class="text-[10px] md:text-[11px] uppercase tracking-[0.14em] text-foreground-600 whitespace-nowrap">${k}</dt><dd class="text-[13px] font-semibold text-foreground-900 text-right leading-snug">${v}</dd></div>`).join('')}</dl></div>`).join('')}</div></div>
+  <div class="reveal" style="transition-delay:110ms"><div class="mt-10 md:mt-12 grid grid-cols-3 bg-background-50 border border-background-300">${[['Potencia',m.cv],['0–100 km/h',m.a],['Velocidad máx.',m.v]].map((s,i)=>`<div class="px-5 py-6 md:px-8 md:py-8 ${i?'border-l border-background-300':''}"><p class="text-[8px] md:text-[9px] uppercase tracking-[0.2em] text-foreground-500">${s[0]}</p><p class="mt-2 font-heading text-[26px] md:text-[40px] leading-none text-foreground-950 whitespace-nowrap">${s[1]}</p></div>`).join('')}</div></div>
+ </div>
+</section>
+
+<section class="py-14 md:py-[104px] bg-background-100">
+ <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+  <div class="reveal">${kicker('04','Lo esencial')}<h2 class="mt-4 font-heading uppercase text-[32px] md:text-[48px] leading-[0.92]">Tres detalles que definen este modelo</h2></div>
+  <div class="mt-9 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">${m.hi.map(([ic,t,d],i)=>`<div class="reveal h-full" style="transition-delay:${i*80}ms"><article class="h-full bg-background-100 border border-background-300/70 p-6 md:p-7 flex flex-col"><span class="w-11 h-11 flex items-center justify-center border border-background-300 text-primary-500 text-lg"><i class="${ic}"></i></span><h3 class="mt-5 font-heading uppercase text-[20px] md:text-[23px] leading-tight text-foreground-950">${t}</h3><p class="mt-3 text-[13.5px] text-foreground-700 leading-[1.7]">${d}</p><span class="mt-auto pt-5 block h-px w-10 bg-accent-500 glow-line"></span></article></div>`).join('')}</div>
+ </div>
+</section>
+
+<section class="py-14 md:py-[104px] bg-background-50">
+ <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10">
+  <div class="reveal"><div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4"><h2 class="font-heading uppercase text-[28px] md:text-[40px] leading-none">Sigue explorando la gama</h2><a class="group inline-flex items-center gap-2 min-h-[40px] text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground-800 hover:text-primary-600 whitespace-nowrap cursor-pointer transition-colors" href="modelos.html"><span class="border-b border-background-400 pb-1 group-hover:border-primary-500 transition-colors">Ver los seis modelos</span><i class="ri-arrow-right-up-line text-sm"></i></a></div></div>
+  <div class="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">${MODELS.filter(x=>x!==m).slice(0,3).map((x,i)=>`<div class="reveal h-full" style="transition-delay:${i*70}ms"><a class="group relative flex flex-col h-full bg-background-50 border border-background-300/70 hover:border-background-400 overflow-hidden cursor-pointer transition-colors duration-300" href="modelo.html?m=${x.s}"><div class="relative h-[200px] md:h-[220px] overflow-hidden bg-background-300"><img alt="Ferrari ${x.n}" loading="lazy" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]" src="${img(x,'g1',1)}"><div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/65 to-transparent"></div><span class="absolute left-4 bottom-3 text-[9px] uppercase tracking-[0.22em] text-accent-400">${x.t}</span></div><div class="px-5 py-5 flex items-end justify-between gap-4"><div><p class="font-heading uppercase text-[22px] md:text-[26px] leading-none text-foreground-950">${x.n}</p><p class="mt-2 text-[12px] text-foreground-600">${x.cv} · 0–100 en ${x.a}</p></div><span class="w-8 h-8 flex items-center justify-center text-sm text-primary-500 transition-transform duration-300 group-hover:translate-x-0.5"><i class="ri-arrow-right-up-line"></i></span></div></a></div>`).join('')}</div>
+ </div>
+</section>`;
+
+// Galería
+function gal(k){
+ $('#gal').innerHTML=`<div class="hover-zoom relative aspect-[16/10] overflow-hidden bg-background-200">
+  <img class="fade-swap absolute inset-0 w-full h-full object-cover object-center" alt="${m.gal[k]}" src="${img(m,'g'+(k+1))}">
+  <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/65 to-transparent"></div>
+  <span class="frame-corner border-l border-t left-4 top-4"></span><span class="frame-corner border-r border-t right-4 top-4"></span>
+  <div class="absolute inset-x-0 top-0 p-4 md:p-5 flex items-center justify-between gap-3"><span class="bg-background-50/95 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.2em] text-foreground-950">${m.t}</span><span class="text-[9px] uppercase tracking-[0.24em] text-foreground-950/75 tabular-nums">${pad(k)} / 04</span></div>
+  <p class="absolute inset-x-0 bottom-0 p-4 md:p-5 text-[11px] text-foreground-950/80 leading-snug max-w-[80%]">${m.gal[k]}</p>
+ </div>
+ <div class="mt-3 grid grid-cols-4 gap-2 md:gap-3">${m.gal.map((_,i)=>`<button type="button" data-g="${i}" aria-pressed="${i==k}" aria-label="Ver imagen ${i+1} del Ferrari ${m.n}" class="group relative aspect-[4/3] overflow-hidden bg-background-300 cursor-pointer transition-all duration-300 ${i==k?'ring-2 ring-primary-500 ring-offset-2 ring-offset-background-50':'opacity-55 hover:opacity-100'}"><img alt="" loading="lazy" class="w-full h-full object-cover object-center" src="${img(m,'g'+(i+1),1)}"><span class="absolute inset-0 bg-black/25 transition-opacity duration-300 ${i==k?'opacity-0':'opacity-100 group-hover:opacity-0'}"></span></button>`).join('')}</div>`}
+gal(0);
+$('#gal').addEventListener('click',e=>{const b=e.target.closest('[data-g]');if(b)gal(+b.dataset.g)});
+
+// Configurador: pintura [nombre, rgb, descripción, código, precio] y llantas
+const [dIn,gIn,gPrice,style,serie]=m.wh;
+const WH=[{c:'FD',n:'Forjada diamantada',in:dIn,sub:'Dos tonos',price:0,tail:serie},{c:'FG',n:'Forjada grafito',in:gIn,sub:'Grafito mate',price:gPrice,tail:'Acabado oscuro'}];
+const plus=(p,inc)=>p?`+ ${eur(p)} €`:inc;
+let pi=0,wi=0;
+function cfg(){const p=m.paints[pi],w=WH[wi],total=m.base+p[4]+w.price,code=`CFG ${m.cfg} · ${p[3]} · ${w.c}`;
+ $('#cfg').innerHTML=`<div class="lg:col-span-7">
+  <div class="relative aspect-[16/10] overflow-hidden bg-background-200 border border-background-300/70">
+   <img class="fade-swap absolute inset-0 w-full h-full object-cover object-center" alt="Ferrari ${m.n} en pintura ${p[0]}" src="${img(m,'p'+(pi+1))}">
+   <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/55 to-transparent"></div><div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/75 to-transparent"></div>
+   <span class="frame-corner border-l border-t left-4 top-4"></span><span class="frame-corner border-r border-t right-4 top-4"></span>
+   <div class="absolute inset-x-0 top-0 p-4 md:p-5 flex items-start justify-between gap-3"><span class="bg-background-50/95 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.2em] text-foreground-950">Vista de estudio</span><span class="text-[9px] uppercase tracking-[0.24em] text-foreground-950/70">${code}</span></div>
+   <div class="absolute inset-x-0 bottom-0 p-4 md:p-5 flex items-end justify-between gap-4">
+    <div><p class="text-[9px] uppercase tracking-[0.26em] text-accent-400">Pintura</p><p class="mt-1 font-heading uppercase text-[22px] md:text-[30px] leading-none text-foreground-950">${p[0]}</p><p class="mt-1.5 text-[11px] text-foreground-950/70">${p[2]} · ${plus(p[4],'Sin coste')}</p></div>
+    <div class="hidden sm:block shrink-0 text-right"><div class="relative w-[86px] h-[86px] md:w-[100px] md:h-[100px] overflow-hidden border border-foreground-950/25 bg-background-200"><img class="fade-swap w-full h-full object-cover object-center" alt="Detalle de la llanta ${w.n} ${w.in}&quot;" src="${img(m,'w'+(wi+1))}"></div><p class="mt-2 text-[9px] uppercase tracking-[0.18em] text-foreground-950/65">${w.n} ${w.in}"</p></div>
+   </div>
+  </div>
+  <p class="mt-3 text-[11px] text-foreground-600 leading-relaxed">Imagen de referencia de la configuración seleccionada. Las muestras de pintura y llanta se confirman en el atelier con el asesor de producto.</p>
+ </div>
+ <div class="lg:col-span-5"><div class="bg-background-50 border border-background-300/70 p-5 md:p-7">
+  <div class="flex items-baseline justify-between gap-3"><h3 class="text-[10px] font-semibold uppercase tracking-[0.26em] text-accent-500">1 · Pintura exterior</h3><span class="text-[10px] uppercase tracking-[0.16em] text-foreground-500">${p[3]}</span></div>
+  <div class="mt-4 grid grid-cols-3 gap-2 md:gap-3">${m.paints.map((x,i)=>{const on=i==pi;return `<button type="button" data-p="${i}" aria-pressed="${on}" aria-label="Pintura ${x[0]}" class="group flex flex-col items-start gap-2 border p-2.5 text-left cursor-pointer transition-colors duration-300 ${on?'border-accent-500 bg-accent-500/10':'border-background-300 hover:border-background-500'}"><span class="block w-full h-7 border ${on?'border-foreground-950/40':'border-foreground-950/15'}" style="background-color:${x[1]}"></span><span class="text-[10px] uppercase tracking-[0.12em] leading-tight ${on?'text-foreground-950':'text-foreground-700'}">${x[0]}</span><span class="text-[9px] text-foreground-500 leading-none">${plus(x[4],'Incluida')}</span></button>`}).join('')}</div>
+  <div class="mt-7 flex items-baseline justify-between gap-3 border-t border-background-300/70 pt-6"><h3 class="text-[10px] font-semibold uppercase tracking-[0.26em] text-accent-500">2 · Llantas</h3><span class="text-[10px] uppercase tracking-[0.16em] text-foreground-500">${w.c}</span></div>
+  <div class="mt-4 flex flex-col gap-2">${WH.map((x,i)=>{const on=i==wi;return `<button type="button" data-w="${i}" aria-pressed="${on}" aria-label="Llantas ${x.n} ${x.in}&quot;" class="flex items-center gap-3 border p-2.5 text-left cursor-pointer transition-colors duration-300 ${on?'border-accent-500 bg-accent-500/10':'border-background-300 hover:border-background-500'}"><span class="relative block w-12 h-12 shrink-0 overflow-hidden bg-background-200 border border-background-300"><img alt="" class="w-full h-full object-cover object-center" src="${img(m,'w'+(i+1))}"></span><span class="min-w-0"><span class="block text-[12px] font-semibold leading-tight ${on?'text-foreground-950':'text-foreground-800'}">${x.n} · ${x.in}"</span><span class="mt-0.5 block text-[10px] text-foreground-500 leading-tight">${x.sub} · ${plus(x.price,'Incluida')}</span></span><span class="ml-auto w-5 h-5 shrink-0 flex items-center justify-center rounded-full border text-[10px] ${on?'border-accent-500 text-accent-400':'border-background-400 text-transparent'}"><i class="ri-check-line"></i></span></button>`}).join('')}</div>
+  <dl class="mt-7 border-t border-background-300/70 pt-5">
+   <div class="flex items-baseline justify-between gap-4 pb-2.5"><dt class="text-[10px] uppercase tracking-[0.16em] text-foreground-600">Precio de partida</dt><dd class="text-[13px] font-semibold text-foreground-900 tabular-nums">${eur(m.base)} €</dd></div>
+   <div class="flex items-baseline justify-between gap-4 pb-2.5"><dt class="text-[10px] uppercase tracking-[0.16em] text-foreground-600">Pintura · ${p[0]}</dt><dd class="text-[13px] font-semibold text-foreground-900 tabular-nums">${plus(p[4],'Incluida')}</dd></div>
+   <div class="flex items-baseline justify-between gap-4 pb-3"><dt class="text-[10px] uppercase tracking-[0.16em] text-foreground-600">Llantas · ${w.n} ${w.in}"</dt><dd class="text-[13px] font-semibold text-foreground-900 tabular-nums">${plus(w.price,'Incluidas')}</dd></div>
+   <div class="flex items-end justify-between gap-4 border-t border-background-300/70 pt-3"><dt class="text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground-800">Total configurado</dt><dd class="font-heading text-[24px] md:text-[28px] leading-none text-foreground-950 tabular-nums whitespace-nowrap">${eur(total)} €</dd></div>
+  </dl>
+  <p class="mt-4 text-[11px] text-foreground-500 leading-relaxed">${m.n} · ${p[0]} · ${w.n} ${w.in}". ${style} · ${w.tail}</p>
+  <div class="mt-6 flex flex-col gap-3">
+   <a class="group/cta ${CTA} bg-accent-500 hover:bg-accent-600 text-foreground-950" href="contacto.html?modelo=${m.s}&pintura=${p[3]}&llanta=${w.c}">Reservar esta configuración${ARROW}</a>
+   <a class="${CTA} border border-background-400 text-foreground-900 hover:border-accent-500 hover:text-accent-400" href="contacto.html">Hablar con el atelier</a>
+  </div>
+ </div></div>`}
+cfg();
+$('#cfg').addEventListener('click',e=>{const b=e.target.closest('[data-p],[data-w]');if(!b)return;if(b.dataset.p)pi=+b.dataset.p;else wi=+b.dataset.w;cfg()});
+}
+</script>
+</body>
+</html>

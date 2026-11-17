@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prueba de conducción y contacto | Ferrari Madrid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Manrope:wght@400;500;600;700&family=Saira+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --color-background-50: oklch(.142 .004 60);
+  --color-background-100: oklch(.178 .005 60);
+  --color-background-200: oklch(.212 .006 58);
+  --color-background-300: oklch(.283 .006 58);
+  --color-background-400: oklch(.362 .006 58);
+  --color-background-500: oklch(.468 .006 58);
+  --color-foreground-50: oklch(.148 .003 60);
+  --color-foreground-400: oklch(.482 .005 60);
+  --color-foreground-500: oklch(.575 .006 60);
+  --color-foreground-600: oklch(.676 .005 60);
+  --color-foreground-700: oklch(.768 .005 60);
+  --color-foreground-800: oklch(.852 .004 60);
+  --color-foreground-900: oklch(.925 .003 60);
+  --color-foreground-950: oklch(.985 .002 90);
+  --color-primary-50: oklch(.969 .014 25);
+  --color-primary-300: oklch(.798 .118 26);
+  --color-primary-400: oklch(.658 .192 27);
+  --color-primary-500: oklch(.545 .226 27);
+  --color-primary-600: oklch(.482 .208 27);
+  --color-primary-700: oklch(.412 .18 27);
+  --color-primary-800: oklch(.34 .148 27);
+  --color-accent-200: oklch(.934 .098 101);
+  --color-accent-400: oklch(.872 .158 101);
+  --color-accent-500: oklch(.845 .177 101);
+  --color-accent-600: oklch(.762 .168 101);
+}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-page="contacto">
+<div class="relative min-h-screen bg-background-50 text-foreground-950 font-sans">
+<div aria-hidden="true" class="shader-layer"><span class="shader-orb shader-orb-accent left-[-12%] top-[6%] w-[520px] h-[520px]"></span><span class="shader-orb shader-orb-primary right-[-14%] top-[46%] w-[620px] h-[620px]"></span><span class="shader-grid"></span><span class="shader-sweep"></span><span class="shader-scan"></span><span class="shader-grain"></span></div>
+<div class="relative z-10">
+<div id="site-header"></div>
+
+<main>
+<section class="relative h-[520px] md:h-[600px] overflow-hidden bg-background-200">
+  <img class="intro-zoom absolute inset-0 w-full h-full object-cover object-center" alt="Fachada del concesionario al atardecer con un deportivo rojo aparcado" src="img/contacto-hero.jpg">
+  <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/10"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30"></div>
+  <div class="relative z-10 h-full w-full mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 flex items-end pb-14 md:pb-20">
+    <div class="max-w-2xl">
+      <p class="text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.34em] text-accent-400">Cita previa</p>
+      <h1 class="mt-5 font-heading uppercase text-[46px] md:text-[60px] lg:text-[72px] leading-[0.92] text-foreground-950">Prueba de conducción</h1>
+      <span class="mt-6 block h-px w-16 bg-primary-500"></span>
+      <p class="mt-5 text-[15px] md:text-base text-foreground-950/80 max-w-xl leading-relaxed">Cuéntanos qué modelo quieres conducir y cuándo te encaja. Confirmamos la cita por teléfono en menos de 24 horas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-14 md:py-[104px] bg-background-50">
+  <div class="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-x-[72px]">
+    <div class="lg:col-span-5 flex flex-col gap-9">
+      <div>
+        <p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary-600">Ferrari Madrid</p>
+        <h2 class="mt-3 font-heading uppercase text-[30px] md:text-[38px] leading-[0.95]">Visítanos</h2>
+        <ul class="mt-5 space-y-4 text-sm">
+          <li class="flex gap-3"><span class="w-5 h-5 flex items-center justify-center text-primary-500"><i class="ri-map-pin-line"></i></span><span class="text-foreground-800">Avenida de Burgos, 12<br>28036 Madrid</span></li>
+          <li class="flex gap-3"><span class="w-5 h-5 flex items-center justify-center text-primary-500"><i class="ri-phone-line"></i></span><a class="text-foreground-800 hover:text-primary-600 cursor-pointer transition-colors" href="tel:+34910248900">+34 910 248 900</a></li>
+          <li class="flex gap-3"><span class="w-5 h-5 flex items-center justify-center text-primary-500"><i class="ri-mail-line"></i></span><a class="text-foreground-800 hover:text-primary-600 cursor-pointer transition-colors break-all" href="mailto:experiencias@ferrarimadrid.example">experiencias@ferrarimadrid.example</a></li>
+        </ul>
+      </div>
+      <div class="border-t border-background-300 pt-6">
+        <h2 class="font-heading uppercase text-[22px] leading-none">Horario</h2>
+        <ul class="mt-4 text-sm">
+          <li class="flex justify-between gap-4 py-3 border-b border-background-300/70"><span class="text-foreground-700">Lunes – Viernes</span><span class="text-foreground-900 whitespace-nowrap">9:00 – 19:30</span></li>
+          <li class="flex justify-between gap-4 py-3 border-b border-background-300/70"><span class="text-foreground-700">Sábado</span><span class="text-foreground-900 whitespace-nowrap">10:00 – 14:00</span></li>
+          <li class="flex justify-between gap-4 py-3"><span class="text-foreground-700">Domingo</span><span class="text-primary-600">Cerrado</span></li>
+        </ul>
+      </div>
+      <div class="border-t border-background-300 pt-6">
+        <h2 class="font-heading uppercase text-[22px] leading-none">Qué incluye la prueba</h2>
+        <ul class="mt-4 space-y-2.5">
+          <li class="flex items-start gap-3 text-[13px] text-foreground-800 leading-[1.55]"><span class="w-4 h-4 mt-0.5 flex items-center justify-center text-accent-600"><i class="ri-check-line"></i></span>Ruta guiada de 45 minutos por carretera abierta</li>
+          <li class="flex items-start gap-3 text-[13px] text-foreground-800 leading-[1.55]"><span class="w-4 h-4 mt-0.5 flex items-center justify-center text-accent-600"><i class="ri-check-line"></i></span>Acompañamiento de un especialista de producto</li>
+          <li class="flex items-start gap-3 text-[13px] text-foreground-800 leading-[1.55]"><span class="w-4 h-4 mt-0.5 flex items-center justify-center text-accent-600"><i class="ri-check-line"></i></span>Comparativa entre dos modelos si lo necesitas</li>
+          <li class="flex items-start gap-3 text-[13px] text-foreground-800 leading-[1.55]"><span class="w-4 h-4 mt-0.5 flex items-center justify-center text-accent-600"><i class="ri-check-line"></i></span>Sin compromiso de compra ni depósito previo</li>
+        </ul>
+      </div>
+      <div class="relative h-[240px] overflow-hidden border border-background-300 bg-background-100" aria-label="Mapa de ubicación del concesionario">
+        <iframe class="absolute inset-0 w-full h-full" title="Ubicación de Ferrari Madrid en Avenida de Burgos 12" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Avenida%20de%20Burgos%2012%2C%2028036%20Madrid&amp;output=embed" style="border:0"></iframe>
+      </div>
+    </div>
+    <div class="lg:col-span-7 flex flex-col">
+      <p class="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary-600">Solicitud</p>
+      <h2 class="mt-3 font-heading uppercase text-[34px] md:text-[48px] leading-[0.94] mb-8">Reserva tu <span class="text-primary-500">prueba.</span></h2>
+      <form id="test-drive-form" data-test-drive novalidate class="relative flex flex-col flex-1">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
+          <div class="min-w-0"><label for="td-name" class="fl">Nombre y apellidos</label><input id="td-name" name="name" type="text" required placeholder="Nombre completo" class="fi"></div>
+          <div class="min-w-0"><label for="td-phone" class="fl">Teléfono</label><input id="td-phone" name="phone" type="tel" required placeholder="+34 600 000 000" class="fi"></div>
+          <div class="sm:col-span-2 min-w-0"><label for="td-email" class="fl">Correo electrónico</label><input id="td-email" name="email" type="email" required placeholder="nombre@correo.com" class="fi"></div>
+          <div class="min-w-0"><label for="td-model" class="fl">Modelo</label><div class="relative">
+            <select id="td-model" name="model" required class="fi appearance-none pr-10 cursor-pointer [&>option]:bg-background-100 [&>option]:text-foreground-950"><option value="">Elige un modelo</option><option>Roma Spider</option><option>296 GTB</option><option>SF90 Stradale</option><option>Purosangue</option><option>12Cilindri</option><option>Daytona SP3</option><option>Aún no lo sé</option></select>
+            <span class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center text-foreground-600"><i class="ri-arrow-down-s-line"></i></span></div></div>
+          <!-- shortcut: fecha con selector nativo; el original usa un calendario propio en popover -->
+          <div class="min-w-0"><label for="td-date" class="fl">Fecha preferida</label><input id="td-date" name="date" type="date" lang="es-ES" class="fi cursor-pointer"></div>
+          <div class="sm:col-span-2 min-w-0"><label for="td-message" class="fl">Comentarios (opcional)</label><textarea id="td-message" name="message" rows="3" maxlength="500" placeholder="Configuración de interés, disponibilidad horaria, dudas sobre la gama…" class="fi h-auto py-3 resize-none min-h-[84px]"></textarea><div class="flex justify-between"><span class="td-count ml-auto mt-1.5 text-xs text-foreground-500">0/500</span></div></div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-between gap-4 sm:items-end mt-9 lg:mt-auto lg:pt-8">
+          <p role="status" class="text-[11px] text-foreground-600 leading-[1.5] max-w-[260px]">Confirmamos cada prueba por teléfono. Sin compromiso de compra.</p>
+          <button type="submit" class="group self-start sm:self-auto min-h-[48px] inline-flex items-center gap-3 border-b border-foreground-500 hover:border-primary-500 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-primary-500 text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground-950 whitespace-nowrap cursor-pointer transition-colors duration-200">Solicitar prueba<span class="w-5 h-5 flex items-center justify-center text-primary-500 text-lg transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"><i class="ri-arrow-right-up-line"></i></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+</div></div>
+
+<script src="site.js"></script>
+</body>
+</html>
